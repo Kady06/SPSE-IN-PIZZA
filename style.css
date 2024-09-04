@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+:root {
+    --detail-color: #e45252;
+    --background-color: #292929;
+}
+
+* {
+    font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--background-color);
+}
+
+header h1 {
+    font-family: "Teko", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5em;
+    color: white;
+}
+
+header img, footer img {
+    max-width: 3em;
+    height: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--detail-color);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: 300ms;
+}
+header nav a:hover {
+    border-bottom: 2px solid var(--detail-color);
+    transition: 300ms;
+}
+
+#carouselExampleAutoplaying {
+    width: 100%;        /* Nastaví šířku carouselu na 100% šířky stránky */
+    max-height: 90vh;   /* Omezí maximální výšku carouselu na 75% výšky viewportu */
+    overflow: hidden;   /* Skryje přebytečné části obrázků, které přesahují výšku */
+}
+
+.carousel-item img {
+    width: 100%;        /* Obrázek vyplní celý carousel na šířku */
+    height: 100%;       /* Obrázek vyplní celý carousel na výšku */
+    object-fit: cover;  /* Ořízne obrázek tak, aby zaplnil celý prostor carouselu */
+}
+
+main section#pizza, main section#gourmet {
+    margin-top: 5em;
+    color: white;
+}
+
+main section#pizza div, main section#gourmet div {
+    background-color: rgb(255, 255, 255); 
+    color: black;
+}
+
+main section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+main section ul li p {
+    text-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
+main section ul li small {
+    padding: 0;
+    margin: 0;
+}
+
+main section#contact {
+    background-color: white;
+    color: black;
+    width: 25%;
+}
+
+main section#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+
+footer .icons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer .icons a {
+    text-decoration: none;
+    color: var(--detail-color);
+    font-size: 2.5em;
+}
